@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+  <script>
+  var num = [1,2,3,4,5];
+  num.forEach(function(value,index, data){
+   console.log(value);//遍历内容
+   console.log(index);//数组索引
+   console.log(data);//数组本身
+    //console.log(value, index, data)    
+ })
+ console.log(num);
+ //没有返回值
+ var newnum = num.forEach(function(value,index, data){
+   console.log(newnum,11111111111);
+ })
+ console.log(newnum,2222);
+
+ var user = [
+      {
+        name: "yuan",
+        sex: "nv"
+    },
+    {
+        name: "ya",
+        sex: "nv"
+    }
+  ];
+  user.forEach(function(user,index,val){
+    user.age = 20;
+    user.phone = "111111111";
+  })
+    console.log(user)
+  </script>
+  </body>
+</html>

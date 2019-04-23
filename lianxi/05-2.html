@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <script>
+      $.ajax({
+          url:"",  
+          dataType:"json",   
+          async:true,//请求是否异步，默认为异步，
+          data:{"data":"value"},    //参数值,键值对
+          type:"GET",   //请求方式post/get
+          beforeSend:function(){
+              //请求前的处理
+          },
+          success:function(req){
+              //请求成功时处理
+              console.log(req);
+          },
+          complete:function(){
+              //请求完成的处理
+          },
+          error:function(err){
+              //请求出错处理
+              console.log(err);
+          }
+      });
+      </script>
+  </body>
+</html>

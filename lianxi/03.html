@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <style type="text/css">
+			.list1{
+				color: #f00;
+			}
+			.list2{
+				color: #f0f;
+			}
+			.list3{
+				color: #0ff;
+			}
+		</style>
+  </head>
+  <body>
+  <input type="text" id="ipt">
+  </body>
+  <script type="text/javascript">
+   var ipt = document.getElementById("ipt");
+   var box = document.getElementById("box");
+   console.log(box);
+   btn.onclick = function(){
+     var text = ipt.value;
+     var length = text.split('').length;
+     if(length > 0 ){
+       var list = document.createElement("p");
+       list.innerText  = text;
+       box.appendChild(list);
+       console.log(list);
+       ipt.value = null;
+       if(length < 4){
+         list.className = "list1";
+       }else if(length >= 4 && length < 8){
+         list.className = "list2";
+       }else{
+         list.className = "list3"
+       }
+     }
+   }
+  </script>
+</html>

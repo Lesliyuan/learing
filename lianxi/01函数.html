@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+  <div id="box"></div>
+  </body>
+  <script type="text/javascript">
+  //1、可任意传递多个参数
+  function abc(a, b){
+    console.log(a);
+    console.log(a,b);//1 undefined
+  }
+  abc(1);//实参小于形参  1
+  abc(1,2); // 1 2
+  abc(1,2,3);//实参大于形参
+
+  //2、可以不给函数定义形参，直接用arguments属性来接受实际传入的参数数组
+  function asd(){
+    var aa = arguments;
+    console.log(aa.length);
+    console.log(aa[0]);
+  }asd(1,2,3,4,4);
+
+
+
+  </script>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+  </head>
+  <body>
+  <p>你的背包</p>
+  <p>没有别的方法</p>
+  <!-- <button>点击隐藏</button> -->
+  </body>
+  <script>
+  $(document).ready(function(){
+    $("p").click(function(){
+      // $(this).hide(1000);
+      $(this).slow(1000);
+    })
+  })
+  </script>
+</html>

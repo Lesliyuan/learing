@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+  </head>
+  <body>
+  <div class="box">
+一群大雁往南飞
+  </div>
+  用户名：<input type="text"></br>
+  密码：<input type="password">
+  </body>
+  <script>
+  $(document).ready(function(){
+    $("input").focus(function(){
+      $(this).css("background", "#ccc");
+    });
+    $("input").blur(function(){
+      $(this).css("background", "#fff");
+    });
+  })
+  </script>
+</html>

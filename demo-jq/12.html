@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+    $(function(){
+      $("button").click(function(){
+        console.log("1111111111")
+        $(".p1").css("background", "green").slideUp(2000).slideDown(2000);
+      })
+    })
+    </script>
+  <style>
+  .p1{
+    width: 100px;
+    height: 100px;
+    background: #f00;
+    margin: 10px;
+  }
+  </style>
+  </head>
+  <body>
+    <p class="p1"></p>
+    <button>点击</button>
+  </body>
+</html>

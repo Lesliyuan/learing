@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script>
+    $(function(){
+      $("button").click(function(){
+        $.get("./demo-ajax.txt", function(data, status){
+          console.log(data)
+          console.log(status);
+        })
+      })
+    })
+    </script>
+  </head>
+  <body>
+  <button>发送一个get请求并返回数据</button>
+  </body>
+</html>

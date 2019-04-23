@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+    $(function(){
+      $("button").click(function(){
+        $(".box").text($("#test").val());
+      })
+    })
+    </script>
+  </head>
+  <body>
+  <input type="text" name="" id="test" value="请输入">
+  <div class="box" style="width:100px;height:100px;background:red"></div>
+  <button>点击显示值</button>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+  </head>
+  <body>
+  <div class="box">
+    啦啦啦啦啦啊啦啦啦
+  </div>
+  </body>
+  <script>
+      $(document).ready(function(){
+        // $(".box").click(function(){
+        //   $(this).hide();
+        // });
+        // $(".box").mouseenter(function(){
+        //   alert("鼠标移动");
+        //   $(this).hide()
+
+        // })
+        // $(".box").mouseleave(function(){
+        //   alert("离开了")
+        //   $(this).hide()
+        // })
+        // $(".box").mousedown(function(){
+        //   alert("鼠标在元素上时按下键盘");
+        //   $(this).hide();
+
+        // })
+        $(".box").mouseup(function(){
+          alert("在元素上松开鼠标按钮");
+          $(this).hide();
+          
+        })
+      })
+      </script>
+</html>

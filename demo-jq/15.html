@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
+    </script>
+    <script>
+    function appendText(){
+      var txt1 = "<p>111111</p>";
+      var txt2 = $("<p></p>").text("222222");
+      var txt3 = document.createElement("p");
+      txt3.innerHTML = "333";
+      $("body").append(txt1, txt2,txt3);
+
+    }
+    </script>
+  </head>
+  <body>
+  <p>我走过千山万水跋涉寻她 路过江南的花</p>
+  <button onclick="appendText()">追加文本</button>
+  </body>
+</html>
